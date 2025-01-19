@@ -1,4 +1,4 @@
-package others;
+package Java.others;
 import java.util.HashSet;
 
 public class contains_duplicate {

@@ -1,4 +1,4 @@
-package others;
+package Java.others;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 
