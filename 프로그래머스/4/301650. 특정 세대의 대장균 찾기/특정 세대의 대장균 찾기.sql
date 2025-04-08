@@ -1,0 +1,9 @@
+-- 코드를 작성해주세요
+SELECT edr.ID
+FROM ECOLI_DATA edl
+JOIN ECOLI_DATA edm
+    ON edl.ID = edm.PARENT_ID
+JOIN ECOLI_DATA edr
+    ON edm.ID = edr.PARENT_ID
+WHERE edl.PARENT_ID IS NULL
+ORDER BY edr.ID
