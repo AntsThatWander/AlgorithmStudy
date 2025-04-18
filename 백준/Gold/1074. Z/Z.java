@@ -37,8 +37,8 @@ public class Main {
                 }
 
                 int tmpN = i - 1;
-                int prevPowLine = (int)Math.pow(2, tmpN);
-                int prevPowBox = (int)Math.pow(prevPowLine, 2);
+                int prevPowLine = 1 << tmpN;
+                int prevPowBox = prevPowLine * prevPowLine;
 
                 int rowQuotient = row / prevPowLine;
                 int colQuotient = col / prevPowLine;
